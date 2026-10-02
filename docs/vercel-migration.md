@@ -48,6 +48,9 @@ npm run build
 ```
 
 37 testes, TypeScript e build passaram. Produção e preview ficaram `Ready` na Vercel.
+O formulário foi enviado pelo navegador no preview: HTTP 200, confirmação visível e contato
+persistido no Blob privado de teste. Logs confirmaram `LEAD_CREATED` e mensageria `NOT_CONFIGURED`.
+Não foram criados contatos de teste no armazenamento de produção.
 O comando de lint existente do Firebase não executa: falta configuração ESLint.
 O build avisa sobre bundle JS maior que 500 kB; otimização não faz parte desta migração.
 `npm audit --omit=dev` encontrou 38 alertas na árvore atual (incluindo ferramentas legadas de Firebase).
