@@ -1,5 +1,5 @@
 import { createHash } from 'crypto';
-import { Lead, LeadPayload, LeadResponse, LeadStore, MessagingResult, SafeLog } from './types';
+import { Lead, LeadPayload, LeadResponse, LeadStore, MessagingResult, SafeLog } from './types.js';
 
 export interface LeadDependencies {
   store: LeadStore;

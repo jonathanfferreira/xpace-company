@@ -8,9 +8,12 @@
     "build": "vite build",
     "preview": "vite preview",
     "test:matcher": "node node_modules/typescript/bin/tsc src/services/classMatcher.ts src/data/classes.ts --outDir test-dist --module commonjs --target es2020 && node --test test/funnel-matching.test.cjs",
-    "test": "npm run test:matcher && npm --prefix functions test"
+    "test": "npm run test:matcher && npm --prefix functions test && tsx --test test/vercel-leads.test.ts",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@vercel/blob": "^2.8.0",
+    "axios": "^1.20.0",
     "firebase-tools": "^15.2.0",
     "framer-motion": "^12.23.26",
     "heic-convert": "^2.1.0",
@@ -27,6 +30,7 @@
     "postcss": "^8.5.6",
     "sharp": "^0.34.5",
     "tailwindcss": "^4.1.18",
+    "tsx": "^4.23.15",
     "typescript": "~5.8.2",
     "vite": "^6.2.0"
   }

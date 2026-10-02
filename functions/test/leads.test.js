@@ -283,6 +283,8 @@ describe('XPACE Lead Engine Foundation Tests (Phase 2)', () => {
   describe('Cenário E: ContactForm sem localhost hardcoded', () => {
     it('verifica que ContactForm.tsx não contém localhost:3000 e utiliza useLeadSubmission', () => {
       const contactFormPath = path.resolve(__dirname, '../../components/ContactForm.tsx');
+      const activeEntry = fs.readFileSync(path.resolve(__dirname, '../../src/components/ContactForm.tsx'), 'utf8');
+      assert.ok(activeEntry.includes("../../components/ContactForm"), 'Active footer must reuse the validated ContactForm');
       const content = fs.readFileSync(contactFormPath, 'utf8');
 
       assert.equal(content.includes('http://localhost:3000/api/lead'), false, 'Não deve conter URL localhost:3000');

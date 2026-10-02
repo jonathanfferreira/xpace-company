@@ -1,5 +1,5 @@
-import { LeadResponse, LeadType, SafeLog } from './types';
-import { LeadError, validateLead } from './validation';
+import { LeadResponse, LeadType, SafeLog } from './types.js';
+import { LeadError, validateLead } from './validation.js';
 
 export interface LeadRequest { method: string; path: string; body: unknown; contentType: string; bodyBytes: number }
 export function createLeadHandler(save: (payload: ReturnType<typeof validateLead>) => Promise<LeadResponse>, log: SafeLog) {

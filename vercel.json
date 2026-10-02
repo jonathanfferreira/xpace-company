@@ -1,0 +1,15 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "redirects": [
+    { "source": "/escola", "destination": "/dance", "permanent": true },
+    { "source": "/company", "destination": "/dance/company", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/api/lead", "destination": "/api/leads" },
+    { "source": "/api/quiz", "destination": "/api/leads" },
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ]
+}
