@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { LeadPayload, MessageResult, MessagingResult } from './types';
-import { normalizePhone } from './validation';
+import { LeadPayload, MessageResult, MessagingResult } from './types.js';
+import { normalizePhone } from './validation.js';
 
 export interface MessagingConfig { apiKey?: string; serverUrl?: string; instance?: string; recipients?: string }
 export interface MessageTransport { post(url: string, data: { number: string; text: string; linkPreview: boolean }, config: { headers: Record<string, string>; timeout: number; maxRedirects: number }): Promise<unknown> }

@@ -1,4 +1,4 @@
-import { LeadPayload, LeadType } from './types';
+import { LeadPayload, LeadType } from './types.js';
 
 export class LeadError extends Error {
   constructor(public readonly code: string, public readonly httpStatus = 400) { super(code); }

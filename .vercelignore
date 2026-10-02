@@ -1,0 +1,16 @@
+.git
+.agent
+.firebase
+xpace-dance-school
+identidade-2026
+functions/node_modules
+functions/lib
+functions/test
+test
+test-dist
+docs
+*.pdf
+build_error*.txt
+deploy-firebase.bat
+.env*
+.playwright-cli
