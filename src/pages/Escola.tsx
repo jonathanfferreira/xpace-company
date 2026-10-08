@@ -43,7 +43,7 @@ export const Escola: React.FC = () => {
       <header className="xds-header">
         <div className="xds-shell xds-header-inner">
           <Link to="/dance" className="xds-logo" aria-label="XPACE Escola de Dança — início" onClick={closeMenu}>
-            <img src="/images/logo/XPACE PERFIL BRANCO.webp" alt="XPACE Escola de Dança" width="160" height="54" />
+            <img src="/brand/xpace-dance-white.png" alt="XPACE" width="160" height="54" /><span className="xds-logo-caption">ESCOLA DE DANÇA</span>
           </Link>
           <button type="button" className="xds-menu-trigger" aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'} aria-expanded={menuOpen} aria-controls="xds-menu" onClick={() => setMenuOpen(!menuOpen)}>
             <span></span><span></span><span></span>
@@ -154,8 +154,8 @@ export const Escola: React.FC = () => {
 
         <section className="xds-life xds-section" aria-labelledby="xds-life-heading">
           <div className="xds-shell xds-life-layout">
-            <div className="xds-life-photo" role="img" aria-label="Vivências da comunidade XPACE"><span>VIVER A DANÇA. VIVER A XPACE.</span></div>
-            <div className="xds-life-copy"><span className="xds-section-marker">05 / MAIS QUE UMA AULA</span><h2 id="xds-life-heading">GENTE QUE<br />SE ENCONTRA<br /><em>NO MOVIMENTO.</em></h2><p>A dança cria encontros, histórias e possibilidades. Aqui, cada evolução importa — dentro e fora da sala.</p><Link to="/dance/company" className="xds-inline-button">Conheça nossa Dance Company <span aria-hidden="true">↗</span></Link></div>
+            <div className="xds-life-photo" role="img" aria-label="Espaço de dança da XPACE"><span>VIVER A DANÇA. VIVER A XPACE.</span></div>
+            <div className="xds-life-copy"><span className="xds-section-marker">05 / MAIS QUE UMA AULA</span><h2 id="xds-life-heading">UM ESPAÇO<br />PARA VIVER<br /><em>A DANÇA.</em></h2><p>Um lugar para descobrir novas habilidades, encontrar sua turma e fazer da dança parte da sua história. Quer conhecer nosso núcleo de competição?</p><Link to="/dance/company" className="xds-inline-button">Conheça nossa Dance Company <span aria-hidden="true">↗</span></Link></div>
           </div>
         </section>
 
@@ -176,7 +176,7 @@ export const Escola: React.FC = () => {
       </main>
 
       <footer className="xds-footer"><div className="xds-shell">
-        <div className="xds-footer-top"><Link to="/dance" aria-label="XPACE Escola de Dança — início"><img src="/images/logo/XPACE PERFIL BRANCO.webp" alt="XPACE" width="180" height="62" /></Link><p>Um lugar para viver a dança.<br />Rua Tijucas, 401 — Joinville, SC.</p></div>
+        <div className="xds-footer-top"><Link to="/dance" aria-label="XPACE Escola de Dança — início"><img src="/brand/xpace-dance-white.png" alt="XPACE" width="180" height="62" /><span className="xds-logo-caption">ESCOLA DE DANÇA</span></Link><p>Um lugar para viver a dança.<br />Rua Tijucas, 401 — Joinville, SC.</p></div>
         <div className="xds-footer-links"><a href="#modalidades">Modalidades</a><a href="#schedule">Horários</a><a href="#plans">Planos</a><a href={whatsappUrl} target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="https://instagram.com/xpaceescoladedanca" target="_blank" rel="noopener noreferrer">Instagram</a><Link to="/">XPACE Company</Link></div>
         <div className="xds-footer-bottom"><span>© {new Date().getFullYear()} XPACE Escola de Dança.</span><Link to="/privacy">Privacidade</Link></div>
       </div></footer>
