@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { SEO } from '../../components/SEO';
-import companyLogo from '../../identidade-2026/COMPANY/XPACE COMPANY BRANCA.png';
+const companyLogo = 'https://raw.githubusercontent.com/jonathanfferreira/xpace-company/main/identidade-2026/COMPANY/XPACE%20COMPANY%20BRANCA.png';
 import './CompanyHome.css';
 
 const ecapxLogo = 'https://raw.githubusercontent.com/jonathanfferreira/ecapx/main/public/brand/ecapx.png';
