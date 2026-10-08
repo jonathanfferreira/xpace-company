@@ -1,5 +1,10 @@
+@font-face{font-family:'XCO Chillax';src:url('/fonts/xco-chillax-bold.otf') format('opentype');font-style:normal;font-weight:700;font-display:swap}
+@font-face{font-family:'XCO PT Mono';src:url('/fonts/xco-pt-mono-bold.woff2') format('woff2');font-style:normal;font-weight:700;font-display:swap}
+body:has(.xco-site){cursor:auto}
+body:has(.xco-site) a,body:has(.xco-site) button{cursor:pointer}
+body:has(.xco-site) a:focus-visible,body:has(.xco-site) button:focus-visible{outline:3px solid #ff5200;outline-offset:4px}
 /* XPACE COMPANY — institutional experience. Scoped intentionally: /dance is unchanged. */
-.xco-site{--xco-dark:#09090d;--xco-white:#faf9f7;--xco-orange:#ff5200;--xco-purple:#6324b2;--xco-pink:#eb00bc;--xco-mono:'PT Mono','IBM Plex Mono','Courier New',monospace;--xco-display:'Chillax',Arial,sans-serif;--xco-body:'Poppins',Arial,sans-serif;background:var(--xco-dark);color:var(--xco-white);font-family:var(--xco-body);font-size:16px;line-height:1.55;text-transform:none;overflow:hidden}
+.xco-site{--xco-dark:#09090d;--xco-white:#faf9f7;--xco-orange:#ff5200;--xco-purple:#6324b2;--xco-pink:#eb00bc;--xco-mono:'XCO PT Mono','PT Mono','IBM Plex Mono','Courier New',monospace;--xco-display:'XCO Chillax','Chillax',Arial,sans-serif;--xco-body:'Poppins',Arial,sans-serif;background:var(--xco-dark);color:var(--xco-white);font-family:var(--xco-body);font-size:16px;line-height:1.55;text-transform:none;overflow:hidden}
 .xco-site *, .xco-site *::before,.xco-site *::after{box-sizing:border-box}
 .xco-site h1,.xco-site h2,.xco-site h3,.xco-site p{margin:0}
 .xco-site h1,.xco-site h2,.xco-site h3{font-family:var(--xco-display);font-weight:700;text-transform:uppercase}

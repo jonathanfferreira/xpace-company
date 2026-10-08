@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { SEO } from '../../components/SEO';
-const companyLogo = 'https://raw.githubusercontent.com/jonathanfferreira/xpace-company/main/identidade-2026/COMPANY/XPACE%20COMPANY%20BRANCA.png';
+const companyLogo = '/brand/xpace-company-white.png';
 import './CompanyHome.css';
 
-const ecapxLogo = 'https://raw.githubusercontent.com/jonathanfferreira/ecapx/main/public/brand/ecapx.png';
-const xtageLogo = 'https://xtage.app/logo-xtage.png';
+const ecapxLogo = '/brand/ecapx.png';
+const xtageLogo = '/brand/xtage-color.png';
 
 export const CompanyHome: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
