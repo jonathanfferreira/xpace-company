@@ -7,8 +7,8 @@ export const Privacy: React.FC = () => (
   <InstitutionalLayout>
     <SEO
       title="Política de Privacidade — XPACE"
-      description="Informações sobre privacidade, tratamento de dados de contato e atendimento na XPACE."
-      keywords="privacidade xpace, lgpd xpace, dados pessoais"
+      description="Informações sobre privacidade, tratamento de dados de contato e atendimento na XPACE, inclusive pelo Instagram."
+      keywords="privacidade xpace, lgpd xpace, dados pessoais, instagram xpace, exclusão de dados"
     />
     <article className="max-w-3xl mx-auto">
       <div className="mb-10">
@@ -17,27 +17,18 @@ export const Privacy: React.FC = () => (
           Política de Privacidade
         </h1>
         <p className="text-gray-400 text-sm">
-          Última atualização: Setembro de 2026 • Versão preliminar para análise interna
+          Última atualização: outubro de 2026
         </p>
       </div>
 
-      {/* Aviso obrigatório de minuta em revisão */}
-      <div className="p-6 rounded-2xl border border-yellow-500/40 bg-yellow-500/10 mb-10 text-yellow-200 text-sm leading-relaxed">
-        <strong className="block font-bold text-yellow-100 mb-1 uppercase tracking-wide">
-          Aviso Importante — Minuta em Revisão
-        </strong>
-        Este texto constitui uma minuta preliminar informativa referente ao tratamento de contatos e leads
-        captados nos formulários do site da XPACE. O documento deverá ser revisado, validado e adaptado
-        pela administração da XPACE Escola de Dança antes de sua publicação jurídica definitiva. Este conteúdo
-        tem caráter de transparência de boa-fé e não afirma conformidade jurídica absoluta e automática com a legislação aplicável.
-      </div>
 
       <div className="space-y-8 text-gray-300 normal-case leading-relaxed text-base">
         <section>
           <h2 className="font-display text-xl font-bold text-white mb-2">1. Quem somos</h2>
           <p>
             A XPACE (XPACE Escola de Dança / XPACE Company) é uma organização voltada à formação artística,
-            ensino de dança e produção cultural, sediada em Joinville/SC.
+            ensino de dança e produção cultural, sediada em Joinville/SC e operada pela Movida Capacitação e
+            Eventos Ltda.
           </p>
         </section>
 
@@ -80,29 +71,59 @@ export const Privacy: React.FC = () => (
           </p>
         </section>
 
-        <section>
-          <h2 className="font-display text-xl font-bold text-white mb-2">5. Armazenamento e segurança</h2>
-          <p>
-            Os dados recebidos são armazenados em ambiente seguro em nuvem (Google Cloud / Firebase),
-            com regras restritas de acesso e controles de autenticação destinados a resguardar a integridade
-            e confidencialidade das informações.
+        <section id="instagram">
+          <h2 className="font-display text-xl font-bold text-white mb-2">5. Atendimento pelo Instagram</h2>
+          <p className="mb-3">
+            Quando você comenta uma publicação ou envia uma mensagem direta ao perfil @xpaceescoladedanca,
+            recebemos, por meio da API oficial do Instagram (Meta), as informações que você mesmo envia:
+          </p>
+          <ul className="list-disc pl-6 space-y-1.5">
+            <li>seu identificador e nome de usuário no Instagram;</li>
+            <li>o texto do comentário ou da mensagem e a data e hora do envio.</li>
+          </ul>
+          <p className="mt-3 mb-3">Usamos esses dados para:</p>
+          <ul className="list-disc pl-6 space-y-1.5">
+            <li>responder dúvidas sobre aulas, modalidades, horários e valores;</li>
+            <li>enviar o link para agendar uma aula experimental;</li>
+            <li>registrar seu interesse no cadastro de interessados da escola, para que a equipe retorne o contato.</li>
+          </ul>
+          <p className="mt-3">
+            As respostas podem ser automáticas, inclusive com apoio de inteligência artificial. Você pode pedir a
+            qualquer momento para falar com uma pessoa da equipe e, se preferir, escrever PARAR para interromper
+            as respostas automáticas. Não pedimos senha nem dados sensíveis (como saúde ou documentos) pelo direct.
+            Para menores de idade, o atendimento de matrícula é feito com o responsável.
+          </p>
+          <p className="mt-3">
+            O Instagram é operado pela Meta, que trata os dados conforme as próprias políticas. Não temos acesso à
+            sua senha. Para remover seus dados, veja a página{' '}
+            <Link to="/exclusao-de-dados" className="text-secondary hover:underline">Exclusão de dados</Link>.
           </p>
         </section>
 
         <section>
-          <h2 className="font-display text-xl font-bold text-white mb-2">6. Seus direitos como titular</h2>
+          <h2 className="font-display text-xl font-bold text-white mb-2">6. Armazenamento e segurança</h2>
+          <p>
+            Os dados recebidos são armazenados em ambiente seguro em nuvem (por exemplo, Google Cloud / Firebase e
+            os provedores de infraestrutura do sistema de gestão da escola), com regras restritas de acesso e
+            controles de autenticação destinados a resguardar a integridade e confidencialidade das informações.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="font-display text-xl font-bold text-white mb-2">7. Seus direitos como titular</h2>
           <p>
             Você tem o direito de solicitar, a qualquer momento:
           </p>
           <ul className="list-disc pl-6 space-y-1.5 mt-2">
             <li>Confirmação sobre a existência de tratamento dos seus dados de contato;</li>
             <li>Atualização ou correção de dados incompletos ou inexatos;</li>
-            <li>Exclusão dos seus dados de nossa base de contatos ativos para novas mensagens.</li>
+            <li>Exclusão dos seus dados de nossa base de contatos ativos para novas mensagens, inclusive das conversas do Instagram (veja <Link to="/exclusao-de-dados" className="text-secondary hover:underline">Exclusão de dados</Link>);</li>
+            <li>Atendimento por uma pessoa em vez de respostas automáticas.</li>
           </ul>
         </section>
 
         <section>
-          <h2 className="font-display text-xl font-bold text-white mb-2">7. Como entrar em contato</h2>
+          <h2 className="font-display text-xl font-bold text-white mb-2">8. Como entrar em contato</h2>
           <p>
             Para exercer seus direitos de titular ou sanar qualquer dúvida referente ao tratamento de seus dados na XPACE,
             entre em contato diretamente com a nossa equipe:
@@ -119,6 +140,17 @@ export const Privacy: React.FC = () => (
                 className="text-secondary hover:underline"
               >
                 (47) 9170-0812
+              </a>
+            </p>
+            <p className="text-gray-300 mt-1">
+              Instagram:{' '}
+              <a
+                href="https://www.instagram.com/xpaceescoladedanca/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-secondary hover:underline"
+              >
+                @xpaceescoladedanca
               </a>
             </p>
           </div>

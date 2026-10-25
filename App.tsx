@@ -5,6 +5,7 @@ import { Escola } from './src/pages/Escola';
 import { DanceCompany } from './src/pages/DanceCompany';
 import { Xtage } from './src/pages/Xtage';
 import { Privacy } from './src/pages/Privacy';
+import { DataDeletion } from './src/pages/DataDeletion';
 import './index.css';
 
 // Preserve campaign parameters and section links on legacy school URLs.
@@ -33,6 +34,7 @@ const App: React.FC = () => {
         <Route path="/dance/company" element={<DanceCompany />} />
         <Route path="/xtage" element={<Xtage />} />
         <Route path="/privacy" element={<Privacy />} />
+        <Route path="/exclusao-de-dados" element={<DataDeletion />} />
         <Route path="/escola" element={<LegacyRedirect to="/dance" />} />
         <Route path="/company" element={<LegacyRedirect to="/dance/company" />} />
       </Routes>
